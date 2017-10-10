@@ -1,16 +1,16 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Java技术分享
+tagline:      ""
 baseurl:      ""
-paginate:     1
+paginate:     5
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       dinghuang
+  url:        http://github.com/dinghuang
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
 
 #Others
