@@ -466,7 +466,7 @@ labels:
 
 可以存在几种类型的用户：
 
-一个-+------------|
+|--------+------------|
 |  | |
 |-----------------|:-----------|
 | Regular users   | 这是大多数交互式OpenShift用户将被表示的方式。常规用户在首次登录时会自动在系统中创建，也可以通过API创建。普通用户用`User`对象表示。例子：j`oe alice` |
@@ -854,7 +854,7 @@ Image流可以配置为从使用自签名证书签名的Image存储库导入标�
 
 ### 4.3. Deployments
 
-**Replication Controllers一个
+**Replication Controllers**
 
 复制控制器确保始终运行指定数量的pod的副本。如果pod出口或被删除，则副本控制器用于实例化更多到所需的数量。同样，如果运行次数比预期的要多，它会删除尽可能多的数量来匹配数字。
 
@@ -1104,12 +1104,12 @@ F5路由器在虚拟服务器上配置池和策略规则，如下所示：
 |-----------------+------------+------------|
 | Route      | When Compared to   | Accessible   |
 |-----------------|:-----------|:-----------|
-| www.example.com/test   | www.example.com/test（www.example.com） | 	
-Yes（No） |
+| www.example.com/test   | www.example.com/test（www.example.com） | 	Yes（No） |
 |www.example.com/test和www.example.com    | www.example.com/test（www.example.com） | Yes（Yes） |
-| www.example.com   |www.example.com/test(www.example.com) | 	
-Yes (Matched by the host, not the route)(Yes) |
+| www.example.com   |www.example.com/test(www.example.com) | 	Yes (Matched by the host, not the route)(Yes) |
 |-----------------+------------|
+
+ 
  
 
      apiVersion: v1
@@ -1313,7 +1313,7 @@ OpenShift中的TLS终止依赖于 SNI来提供自定义证书。在端口443处�
 5.OpenShift使用
 --------------------------------------------------
 
- ### 5.1. OpenShift安装
+### 5.1. OpenShift安装
  
 [官方网址][51]
 
@@ -1327,7 +1327,7 @@ OpenShift中的TLS终止依赖于 SNI来提供自定义证书。在端口443处�
 
 目前免费只支持2个应用
 
- ### 5.2. 创建应用
+### 5.2. 创建应用
 
 通过docker image部署：
 
@@ -1367,7 +1367,7 @@ OpenShift中的TLS终止依赖于 SNI来提供自定义证书。在端口443处�
     
     View details with 'oc describe <resource>/<name>' or list everything with 'oc get all'.
     
- ### 5.3. Configuring Automated Builds（配置自动构建）
+### 5.3. Configuring Automated Builds（配置自动构建）
 
 **webhook**
 
@@ -1389,7 +1389,7 @@ Github 开发者平台的文档中对 Webhook 的所能做的事是这样描述�
  3. 点击复制按钮复制你的GitHub webhook。
  4. 浏览到GitHub上的分支存储库，然后单击 **Settings** 。
  5. 单击 **Webhooks & Services** 。
- 6. 单击 **Add webhook* 。
+ 6. 单击 **Add webhook** 。
  7. 将您的Webhook URL粘贴到 **Payload URL** 字段中。
  8. 在 **Secret** 字段中，键入在创建应用程序时选择的秘密。
  9. 单击 **Add webhook** 以保存。
@@ -1406,7 +1406,7 @@ GitHub现在尝试ping OpenShift服务器以确保通信成功。如果配置正
 如果您的Webhook不工作，或者如果构建失败，并且您不想在重新启动构建之前更改代码，则可能会发现手动重建Image很有用。
 要根据您最近提交的更改到您的分支存储库手动重建Image：
 
- 1. 单击 **Browse ** ，然后单击 **Builds** 。
+ 1. 单击 **Browse** ，然后单击 **Builds** 。
  2. 找到您的构建，然后单击 **Rebuild** 。
 
 6.管理员手册
