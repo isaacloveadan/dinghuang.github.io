@@ -45,7 +45,7 @@ OpenShift补充说：
 
 ### 2.2. 什么是OpenShift架构？
 
-OpenShift具有基于微服务的较小的，去耦合的单元的架构。它可以在Kubernetes集群的顶部（或旁边）运行，还可以 存储有关存储在etcd中的对象的数据， 这是一个可靠的集群键值存储。这些服务按功能细分：
+OpenShift具有基于微服务的较小的，去耦合的单元的架构。它可以在[Kubernetes][61]集群的顶部（或旁边）运行，还可以 存储有关存储在[etcd][60]中的对象的数据， 这是一个可靠的集群键值存储。这些服务按功能细分：
 
 REST API，它暴露了每个 核心对象。
 
@@ -65,7 +65,7 @@ OpenShift和Kubernetes API会 验证提供凭据的用户，然后 根据角色�
 
 授权在OpenShift策略引擎中处理，该引擎定义了诸如“创建pod”或“列表服务”之类的操作，并将它们分组为策略文档中的角色。角色由用户或组标识符绑定到用户或组。当用户或服务帐户尝试执行操作时，策略引擎将在允许其继续之前检查分配给用户的一个或多个角色（例如，当前项目的集群管理员或管理员）。
 
-由于集群上运行的每个容器都与服务帐户相关联，因此也可以将秘密与这些服务帐户相关联 并将其自动传递到容器中。这使得基础设施可以管理用于拉和推送Image，构建和部署组件的秘密，并且还允许应用程序代码轻松利用这些秘密。
+由于集群上运行的每个容器都与服务帐户相关联，因此也可以将Secret与这些服务帐户相关联 并将其自动传递到容器中。这使得基础设施可以管理用于拉和推送Image，构建和部署组件的Secret，并且还允许应用程序代码轻松利用这些Secret。
 
 3.OpenShift基础架构组件
 --------------------------------------------------
@@ -1391,7 +1391,7 @@ Github 开发者平台的文档中对 Webhook 的所能做的事是这样描述�
  5. 单击 **Webhooks & Services** 。
  6. 单击 **Add webhook** 。
  7. 将您的Webhook URL粘贴到 **Payload URL** 字段中。
- 8. 在 **Secret** 字段中，键入在创建应用程序时选择的秘密。
+ 8. 在 **Secret** 字段中，键入在创建应用程序时选择的Secret。
  9. 单击 **Add webhook** 以保存。
 
 GitHub现在尝试ping OpenShift服务器以确保通信成功。如果配置正确，您将在新的webhook URL旁边看到一个绿色的复选标记。将鼠标悬停在复选标记上，以查看上一次交货的状态。
@@ -1476,3 +1476,5 @@ GitHub现在尝试ping OpenShift服务器以确保通信成功。如果配置正
   [57]: https://segmentfault.com/a/1190000003908244
   [58]: https://docs.openshift.com/enterprise/3.0/install_config/install/prerequisites.html
   [59]: https://docs.openshift.com/enterprise/3.0/install_config/install/quick_install.html
+  [60]: https://coreos.com/etcd/
+  [61]: https://kubernetes.io/
