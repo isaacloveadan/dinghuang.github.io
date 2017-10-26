@@ -410,6 +410,7 @@ OpenShift将Pods视为绝对不变的; pod定义在运行时不能进行更改�
  10. pod定义了可供其容器使用的存储卷。在这种情况下，它为registry storage 提供了一个短暂的volume，以及secret包含服务帐户凭据的volume。
 
 **Services**
+
 Kubernetes service作为内部负载均衡器。它识别一组复制的pod，以便代理它接收的连接。在服务保持一贯可用的情况下，可以任意添加备份pod或从服务中删除服务，使任何依赖于服务的内容能够在一致的内部地址处引用。
 
 服务被分配一个IP地址和端口对，当被访问时，代理到适当的后备Pod。服务使用标签选择器来查找在某个端口上提供某种网络服务的所有运行的容器。
@@ -510,7 +511,7 @@ Kubernetes命名空间提供了一种机制来对集群中的资源进行整理�
 | Service accounts       |  服务帐户会自动对项目中对​​象的指定访问进行操作。   | 
 |-----------------+------------|
 
-群集管理员可以创建项目 并将 项目的https://docs.openshift.com/enterprise/3.0/admin_guide/manage_authorization_policy.html#managing-role-bindings给用户社区的任何成员。集群管理员还可以允许开发人员创建 自己的项目。
+群集管理员可以创建项目并将项目的[管理权限委派][62]给用户社区的任何成员。集群管理员还可以允许开发人员创建 自己的项目。
 
 开发人员和管理员可以使用[CLI][23]或 Web控制台与项目进行交互。
 
@@ -586,7 +587,8 @@ S2I鼓励Image共享生态系统，您可以利用应用程序的最佳实践。
 
 自定义构建策略允许开发人员定义负责整个构建过程的特定构建器Image。使用您自己的构建器Image，可以自定义构建过程。
 
-所述自定义Image助洗剂是具有嵌入的构建过程的逻辑，如建筑物的RPM或建筑物基础多克尔Image的普通Image泊坞。该 openshift /产地-自定义码头工人建设者 Image默认情况下使用。
+自定义构建器映像是具有嵌入式构建过程逻辑的平原Docker映像，例如构建RPM或构建基础Docker映像。
+默认情况下使用openshift / origin-custom-docker-builder图像。
 
 **Image Streams**
 
@@ -1478,3 +1480,4 @@ GitHub现在尝试ping OpenShift服务器以确保通信成功。如果配置正
   [59]: https://docs.openshift.com/enterprise/3.0/install_config/install/quick_install.html
   [60]: https://coreos.com/etcd/
   [61]: https://kubernetes.io/
+  [62]: https://docs.openshift.com/enterprise/3.0/admin_guide/manage_authorization_policy.html#managing-role-bindings
