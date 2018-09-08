@@ -137,6 +137,7 @@ net.ipv4.ip_forward = 1
 如果结果中有hybla，则证明你的内核已开启hybla，如果没有hybla，可以用命令modprobe tcp_hybla开启。
 
 对于低延迟的网络（如日本，香港等），可以使用htcp，可以非常显著的提高速度，首先使用modprobe tcp_htcp开启，再将net.ipv4.tcp_congestion_control = hybla改为net.ipv4.tcp_congestion_control = htcp，建议EC2日本用户使用这个算法。
+
 2.TCP优化
 --------------------------------------------------
 1.修改文件句柄数限制
