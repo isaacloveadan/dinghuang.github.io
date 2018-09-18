@@ -232,21 +232,18 @@
  10. [openlogos：免费开源图标库，还在维护更新，支持下。][151]
  11. [iOSProject：个人收集的iOS演示项目。][152]
  12. [awesome-github-wechat-weapp：微信小程序开源项目汇总。][153]
- 13. [jersey：基于RESTful设计的java网络服务框架，目前已经停止维护。][155]
- 14. [TheAlgorithms/Java：所有算法在Java中的实现，强烈推荐。][157]
- 15. [free-programming-books-zh_CN：免费的计算机编程类中文书籍，欢迎去那投稿。][158]
- 16. [openlogos：免费开源图标库，还在维护更新，支持下。][151]
+ 13. [TheAlgorithms/Java：所有算法在Java中的实现，强烈推荐。][157]
+ 14. [free-programming-books-zh_CN：免费的计算机编程类中文书籍，欢迎去那投稿。][158]
+ 15. [openlogos：免费开源图标库，还在维护更新，支持下。][151]
 ### 3.2 框架、工具
  1. [jodd：轻量级的Java微框架。][140]
  2. [tini：容器的一个小而有效的`init`。][142]
  3. [github-markdown-toc：用Shell写的自动生成Github中Markdown文档目录的小工具。][145]
  4. [undertow：简易高性能无阻塞网络Java服务器框架。][147]
  5. [Lealone：兼具RDBMS、NoSQL优点的个人异步化NewSQL单机与分布式关系数据库。][150]
- 6. [iOSProject：个人收集的iOS演示项目。][152]
- 7. [awesome-github-wechat-weapp：微信小程序开源项目汇总。][153]
- 8. [elasticsearch-analysis-ik：ElasticSearch中文分词工具。][154]
- 9. [jersey：基于RESTful设计的java网络服务框架，目前已经停止维护。][155]
- 10. [JSqlParser：解析SQL语句并将其转换为Java类的层次结构。][156]
+ 6. [elasticsearch-analysis-ik：ElasticSearch中文分词工具。][154]
+ 7. [jersey：基于RESTful设计的java网络服务框架，目前已经停止维护。][155]
+ 8. [JSqlParser：解析SQL语句并将其转换为Java类的层次结构。][156]
 
 
   [1]: https://dinghuang.github.io/main/2017/10/09/new-git.html
